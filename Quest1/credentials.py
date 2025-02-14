@@ -1,4 +1,4 @@
-#write a peogram that will ask for the name and the age feom the user
+# write a peogram that will ask for the name and the age feom the user
 # and print them to the console
 
 
