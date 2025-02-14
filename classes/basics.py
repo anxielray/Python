@@ -9,6 +9,9 @@ class Dog:
 		print(f"{self.name} says woof!")
 
 # creating objects from the class
+# Attributes are the variable that belong to the class
+# Methods are functions that belong to the same class
+# A special constructor(method) that runcswhrn the new object is created
 my_dog = Dog("Anxiel")
 my_dog.bark()
 
