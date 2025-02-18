@@ -35,11 +35,12 @@ with open('random_users.csv', 'r') as csv_file:
 # Writing to a csv file using a dictionary writer
     with open('new_random_users.csv', 'w') as new_csv_file:
         fieldnames=['first_name', 'last_name', 'email']
-        csv_writer = csv.DictWriter(new_csv_file, fieldnames=fieldnames, delimiter=',')
+        csv_writer = csv.DictWriter(new_csv_file, fieldnames=fieldnames, delimiter='\t')
 
         csv_writer.writeheader()
 
         for line in csv_reader:
+            del line['email'] # the modifications only remove the email values, but retain the keys
             csv_writer.writerow(line)
         
 with open('new_random_users.csv', 'r') as new_csv_file:
