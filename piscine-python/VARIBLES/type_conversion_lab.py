@@ -7,6 +7,6 @@ float_value = float(string_float)
 bool_value = bool(string_bool)
 
 # Print the converted values along with their types
-print(f"Integer: {int_value}, Type: {type(int_value)}")
-print(f"Float: {float_value}, Type: {type(float_value)}")
-print(f"Boolean: {bool_value}, Type: {type(bool_value)}")
+print(f"32 as an  integer is: {int_value}, and is of Type: {type(int_value)}")
+print(f"3.141 as a Float: {float_value}, and is of Type: {type(float_value)}")
+print(f"True as a Boolean: {bool_value}, and is of Type: {type(bool_value)}")
